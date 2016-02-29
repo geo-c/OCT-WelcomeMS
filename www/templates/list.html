@@ -1,0 +1,10 @@
+<ion-view>
+    <ion-content ng-controller="ListController">
+		<div class="list card" ng-repeat="route in routes">
+		  	<a class="item item-thumbnail-left" href="#/photos/{{route.id}}">
+    			<img src="{{route.icon}}"></img>
+    			<h2>{{route.destination}}</h2>
+  			</a>
+		</div>        
+    </ion-content>
+</ion-view>

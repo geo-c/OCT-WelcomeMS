@@ -1,0 +1,26 @@
+<ion-view>
+    <ion-content>
+        <div id="map" data-tap-disabled="true"></div>
+    		<div class="input-label" style = "z-index: 99;" ng-controller="dropdown">
+		    	<form action="#">
+					<p class="dropdownmenu">
+		    			<label class="item item-input item-select fullwidth"><img src= "img/RefugeeCampIcon.png"  class="dropdownmenuicon"/>
+		    				<select ng-change = "updateMap()" ng-options = "camp.name for camp in camps" ng-model = "selectedCamp"></select>
+		    			</label>
+					</p>
+				</form>			   											    
+			    <ion-checkbox class="button button-block button-negative busCheckBox" side="left"  ng-click="busCheck()" ng-model = "busstations" ng-disabled=hideCheckBox>
+					<img src="img/busstation.png" class="busCheckBoxIcon"/>
+				</ion-checkbox>
+			    <ion-checkbox class="button button-block button-negative shopsCheckBox" side="right" ng-click="shopsCheck()" ng-model = "shops" ng-disabled=hideCheckBox>
+					<img src="img/shopping.png" class="shopCheckBoxIcon"/>
+				</ion-checkbox>
+			    <ion-checkbox class="button button-block button-negative pharmacyCheckbox" ng-click="pharmacyCheck()" ng-model = "pharmacy" ng-disabled=hideCheckBox>
+					<img src="img/pharmacy.png" class="pharmacyCheckboxIcon" />
+				</ion-checkbox>
+			</div> 
+			<div ng-controller= "GeolocalizationController">
+				<img src="img/geolocalization.png" class="GeolocalizationController" ng-click="localize()"/>
+			</div>       
+    </ion-content>
+</ion-view>

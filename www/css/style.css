@@ -1,0 +1,124 @@
+/* Empty. Add your own CSS if you like */
+
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+	position:absolute;
+	bottom:0px;
+    width: 100%;
+    height: 100%;
+}
+
+#map2 {
+	position:absolute;
+	bottom:5%;
+	left: 1%;
+    width: 98%;
+
+}
+
+#expandButton {
+	position: absolute;
+	right:2%;
+}
+
+#photo {
+	width: 98%; 
+	position: absolute; 
+	top: 1%; 
+	left:1%;
+}
+
+.background{
+	background-color: white; 
+}
+
+.icon{
+	width: 100%; 
+	height: 100%;
+}
+
+.startinpageMap{
+	background-color: black; 
+	width: 100%; 
+	height: 45%;
+}
+
+.startinpageRoutes{
+	width: 100%; 
+	height: 40%; 
+	position: absolute; 
+	bottom: 0%;
+}
+
+.dropdownmenu {
+	width: 110px; 
+	margin-top: 2%;
+}
+
+.dropdownmenuicon{
+	width: 30px; 
+	height: 30px; 
+	position: relative;
+	left:-10px;
+}
+
+.fullwidth{
+	width: 100%;
+}
+
+.busCheckBox{
+	position: absolute; 
+	left:110px; 
+	top:0%; 
+	width: 80px;
+}
+
+.busCheckBoxIcon{
+	width:20px; 
+	margin-top: 20%; 
+	margin-left: 35px;
+}
+
+.shopsCheckBox{
+	position: absolute; 
+	left:191px; 
+	top:0px; 
+	width: 80px;
+}
+
+.shopCheckBoxIcon{
+	width:20px; 
+	margin-top: 20%; 
+	margin-left: 35px;
+}
+
+.pharmacyCheckbox{
+	position: absolute; 
+	left:272px; 
+	top:0px; 
+	width: 80px;
+}
+
+.pharmacyCheckboxIcon{
+	width:25px; 
+	margin-top: 20%; 
+	margin-left: 35px;	
+}
+
+.GeolocalizationController{
+	position: absolute; 
+	right: 10px; 
+	bottom: 85px; 
+	background-color: white
+}
+
+.swiperHeight{
+	height: 45%;
+}
+
+.photoMap{
+	height: 45%;
+}
