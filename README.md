@@ -34,7 +34,7 @@ Google Maps: https://developers.google.com/maps/
 - add a json-object including id, the name of the destination, icon representing the target, series. Series is an array containing the names (in this case ids) of the photographs needed to reach the target
 
 ## Bugs
-It seems that the map in the map section and the map below the photo don't get well together. Panning the main map somehow destroys the map below the photo. A dirty work-around in app.js reacts to it but doesn't solve the issue.
+It seems that the map in the map section and the map below the photo don't get well together. Panning the main map somehow destroys the map below the photo. A dirty work-around in app.js (line 63-65) reacts to it but doesn't solve the issue.
 
 ## To-do
 "Listen" to the checkbox: If I choose a refugee camp and with off one of the checkboxes and then switch to another refugee camp, the icons of the corresponding deactivated category is still visible. 
