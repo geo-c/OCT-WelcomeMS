@@ -7,17 +7,25 @@ AngularJS: https://angularjs.org/
 Google Maps: https://developers.google.com/maps/
 
 ## Installation
-1.) Install Apache Cordova (https://cordova.apache.org/#getstarted)
+Install on yout laptop
+1.) node.js: https://nodejs.org/en/
 
-2.) Create a project following Apache Cordova guide
+2.) local server, e.g. Xampp: https://www.apachefriends.org/de/index.html 
 
-3.) Download www folder from this repository
+3.) Apache Cordova (https://cordova.apache.org/#getstarted)
 
-4.) Grap a google maps api 
+Then:
+4.) Create a project following Apache Cordova guide
 
-5.) Search for API-KEY in the main index.html and replace it with the key
+5.) Download www folder from this repository
 
-6.) run it in a browser or on a mobile device
+6.) Grap a google maps api key
+
+7.) Search for API-KEY in the main index.html and replace it with the key
+
+8.) Replace the default www folder with content in WelcomeMS.
+
+9.) Build and run app following Apache Cordova guide
 
 ## Add a camp
 - open refugeeService.js
