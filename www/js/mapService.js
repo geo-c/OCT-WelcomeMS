@@ -151,14 +151,14 @@ app.service('mapService', function(){
 		  if (status === google.maps.places.PlacesServiceStatus.OK) {
 		    data = results;
 		    for (var i = 0; i < results.length; i++) {
-		    	createMarker(results[i], type);
+		    	createMarker(results[i], type, $scope);
 		    }
 		  }
 		}	
 		$scope.hideCheckBox = false;
  	};
  	
-	function createMarker(place, type) {			
+	function createMarker(place, type, $scope) {			
 		var icon ="";
 		switch (type) {
 			case "grocery_or_supermarket":
@@ -186,11 +186,14 @@ app.service('mapService', function(){
 		    clickable: false		  	
 		});
 		if (type === "grocery_or_supermarket"){
-			dataMarkerShops.push(marker);			  					
+			dataMarkerShops.push(marker);
+			shopManager($scope.shops);			  					
 		} else if (type === "bus_station") {
 			dataMarkerBusstations.push(marker);
+			busManager($scope.busstations);
 		} else if (type === "pharmacy") {
 			dataMarkerPharmacy.push(marker);
+			pharmacyManager($scope.pharmacy);
 		}
 	};
  	
